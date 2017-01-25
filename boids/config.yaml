@@ -1,0 +1,12 @@
+boids_count: 50
+xmin: -450.0
+xmax: 50.0
+ymin: 300.0
+ymax: 600.0
+vxmin: 0
+vxmax: 10.0
+vymin: -20.0
+vymax: 20.0
+alert_distance: 100
+flocking_distance: 1000
+flocking_strength: 0.125
