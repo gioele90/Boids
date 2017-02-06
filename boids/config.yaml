@@ -10,3 +10,4 @@ vymax: 20.0
 alert_distance: 100
 flocking_distance: 1000
 flocking_strength: 0.125
+middle_strength: 0.01

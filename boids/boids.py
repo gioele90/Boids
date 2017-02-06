@@ -14,10 +14,11 @@ boids=(boids_x,boids_y,boid_x_velocities,boid_y_velocities)
 
 def update_boids(boids):
 	xs,ys,xvs,yvs=boids
+# Fly towards the middle
 	for i in range(boids_count):
 		for j in range(boids_count):
-			xvs[i]=xvs[i]+(xs[j]-xs[i])*0.01/len(xs)
-			yvs[i]=yvs[i]+(ys[j]-ys[i])*0.01/len(xs)
+			xvs[i]=xvs[i]+(xs[j]-xs[i])*middle_strength/len(xs)
+			yvs[i]=yvs[i]+(ys[j]-ys[i])*middle_strength/len(xs)
 
 # Fly away from nearby boids
 
