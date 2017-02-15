@@ -50,7 +50,7 @@ def update_boids(positions,velocities):
 	positions += velocities
 
 figure=plt.figure()
-axes=plt.axes(xlim=(-1500,1500), ylim=(-1500,1500))
+axes=plt.axes(xlim=(-1500,1000), ylim=(-1500,1000))
 scatter=axes.scatter(positions[0],positions[1])
 
 def animate(frame):
