@@ -5,7 +5,7 @@ import numpy as np
 class Boids(object):
 
 	def __init__(self,boids_count=50,p_limits=[-450.0, 300.0, 50.0, 600.0]
-,v_limits=[0, -20.0, 10.0, 20.0],alert_distance=100,flocking_distance=1000,flocking_strength=0.125,middle_strength=0.01,frames=50,interval=50,xlim=(-1500,1000),ylim=(-1500,1000)):
+,v_limits=[0, -20.0, 10.0, 20.0],alert_distance=100,flocking_distance=10000,flocking_strength=0.125,middle_strength=0.01,frames=50,interval=50,xlim=(-1500,1000),ylim=(-1500,1000)):
 
 		self.boids_count=boids_count
 		self.alert_distance=alert_distance
@@ -17,8 +17,8 @@ class Boids(object):
 		self.xlim=xlim
 		self.ylim=ylim
 		self.positions=self.newflock(boids_count,np.array(p_limits[0:1])
-,np.array(v_limits[1:3]))
-		self.velocities=self.newflock(boids_count,np.array(v_limits[0:2]),np.array(v_limits[1:3]))
+,np.array(v_limits[2:3]))
+		self.velocities=self.newflock(boids_count,np.array(v_limits[0:1]),np.array(v_limits[2:3]))
 
 #Create new set of positions/velocities for the flock
 
@@ -91,3 +91,4 @@ class Boids(object):
 		velocity_separation_if_close[0,:,:][very_far] = 0
 		velocity_separation_if_close[1,:,:][very_far] = 0
 		self.velocities -= np.mean(velocity_separation_if_close, 1)*self.flocking_strength
+

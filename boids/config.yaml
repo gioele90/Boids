@@ -2,10 +2,10 @@ boids_count: 50
 p_limits: [-450.0, 300.0, 50.0, 600.0]
 v_limits: [0, -20.0, 10.0, 20.0]
 alert_distance: 100
-flocking_distance: 1000
+flocking_distance: 10000
 flocking_strength: 0.125
 middle_strength: 0.01
 frames: 50
 interval: 50
-xlim: [-1500,1000]
-ylim: [-1500,1000]
+xlim: [-500,1500]
+ylim: [-500,1500]
