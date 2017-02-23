@@ -4,9 +4,7 @@ with open("README.txt", "rb") as f:
 setup(
 	name="boids",
 	packages=find_packages("boids",exclude=["test"]),
-	entry_points={
-	"console_scripts":['boids=boids.boids:main']
-	},
+	scripts = ['scripts/boids'],
 	version="1.0",
 	description="Run a simulation of birds flying",
 	long_description=long_descr,
