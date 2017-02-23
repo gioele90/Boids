@@ -5,7 +5,7 @@ setup(
 	name="boids",
 	packages=find_packages("boids",exclude=["test"]),
 	scripts = ['scripts/boids'],
-	version="1.0",
+	version="1.1",
 	description="Run a simulation of birds flying",
 	long_description=long_descr,
 	author="Gioele Consani",
