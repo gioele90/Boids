@@ -3,7 +3,7 @@ with open("README.txt", "rb") as f:
 	long_descr = f.read().decode("utf-8")
 setup(
 	name="boids",
-	packages=find_packages("boids",exclude=["test"]),
+	packages=find_packages("project",exclude=["test"]),
 	scripts = ['scripts/boids'],
 	version="1.1",
 	description="Run a simulation of birds flying",
