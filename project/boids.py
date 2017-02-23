@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 from matplotlib import animation
-from boids_class import Boids
+from .boids_class import Boids
 from argparse import ArgumentParser
 import yaml
 import numpy as np
