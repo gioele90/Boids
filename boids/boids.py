@@ -16,6 +16,3 @@ def main():
 		globals().update(config)
 		boids=Boids(boids_count,p_limits,v_limits,alert_distance,flocking_distance,flocking_strength,middle_strength,frames,interval,xlim,ylim)
 		boids.fly()
-
-if __name__ == "__main__":
-	main()
