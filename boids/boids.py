@@ -18,4 +18,4 @@ def main():
 		boids.fly()
 
 if __name__ == "__main__":
-    main()
+	main()
