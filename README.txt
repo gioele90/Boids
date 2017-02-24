@@ -1,4 +1,4 @@
-BOIDS 1.0
+BOIDS 1.2
 ==============
 
 This software displays a set of points on a graph that move in imitation of a flock of birds. The "boids" (birds) adjust their
